@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Passport demo</title>
+  </head>
+  <body>
+    <% if(!isAuthenticated){ %>
+      <a href="/login">Login in here</a>
+    <% }else{ %>
+      Hello, <%= user.name %>
+      <a href="/logout">Log out</a>
+    <%}%>
+  </body>
+</html>
